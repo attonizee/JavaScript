@@ -6,7 +6,7 @@ const getUserChoice = userInput => {
   } else {
       console.log('Wrong input!');
   }
-  }
+  };
   
   //Function for computer to make choice
   function getComputerChoice() {
@@ -24,7 +24,7 @@ const getUserChoice = userInput => {
         computerChoice = 'scissors';
         break;
     } return computerChoice;  
-  }
+  };
   
   //Function with logic to determine the winner
   function determineWinner(userChoice, computerChoice) {
@@ -36,7 +36,7 @@ const getUserChoice = userInput => {
     if (userChoice === 'rock' ) {
       if (computerChoice === 'paper') {
         return 'The computer won!';
-      }else {
+      } else {
         return 'You won!';
       }
     }
@@ -54,7 +54,7 @@ const getUserChoice = userInput => {
         return 'You won!';
       }
     }
-    }
+    };
   
   //Function for play and get the winner
   function playGame() {
@@ -62,6 +62,6 @@ const getUserChoice = userInput => {
     const computerChoice = getComputerChoice();
     console.log(`User dropped ${userChoice} and computer dropped ${computerChoice}`);
     console.log(determineWinner(userChoice, computerChoice));
-  }
+  };
   
   playGame();
