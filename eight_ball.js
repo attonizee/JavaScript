@@ -1,7 +1,10 @@
+//Variable for my name
 let userName = '';
 userName ? console.log(`Hello, ${userName}`) : console.log('Hello!');
+//Question from user to Magic Ball :)
 const userQuestion = 'Will I become a werewolf tonight?';
 console.log(userQuestion);
+//Magic Ball dropps the answer
 const randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
 
@@ -30,6 +33,6 @@ switch(randomNumber) {
   case 7:
     eightBall = 'Signs point to yes';
     break;
-}
+};
 
-console.log(eightBall)
+console.log(eightBall);
